@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <title>May's IT161 Portal Website</title>
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <meta charset="utf-8" />
+<html lang="en"><head>
+  <title>May's Contact Form</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/portal.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/tables.css" />
+  <link rel="stylesheet" href="css/big.css" />
  </head>
  <body>
-  <header>
+ <header>
     <h1>May's IT161 Website</h1>
       <nav class="topnav" id="myTopnav">
        <a href="index.html" class="active">Welcome</a>
@@ -27,29 +27,34 @@
       </nav>
   </header>
      
-   <div class="wrapper">
-     
-     <img class="desktop" src="images/desktop.jpg" alt="Photo of an adorable GSD puppy" />
-       
-     <img class="tablet" src="images/tablet.jpg" alt="Photo of an adorable GSD puppy" />
-       
-     <img class="phone" src="images/phone.jpg" alt="Photo of an adorable but large GSD in the lap of his best buddy" />
-       
-       <h2 class="subheader">A little about me!</h2>
-       
-       <p>Hello everyone, my name is May (Hyeyeon) from South Korea. <br>
-        I majored in Fine Art before studying CS. <br>
-        I love drawing taking picture and videos as well as editing them.<br> 
-        Initially I was interested in Data, but I'm really enjoying my time learning Python, HTML and JavaScript.</p>
-       
+   <div class="wrapper">  
+       <h2 class="subheader">Contact</h2>
+       <?php
+        /*
+         * Below are 2 different forms to be re-used       
+         * 
+         * Only use one at a time, comment out the other!       
+         *
+         */
+
+        include 'includes/contact_include.php'; #site keys & code here
+    
+        $toAddress = "hyeyeon.kim@seattlecolleges.edu";  //place your/your client's email address here
+        $toName = "MayKim"; //place your client's name here
+        $website = "Conact Form Test";  //place NAME of your client's website
+
+        //echo loadContact('simple.php');#demonstrates a simple contact form
+        echo loadContact('multiple.php');#demonstrates multiple form elements
+
+	?>
      <footer>
-      <p><small>&copy; 2022 by 
-          <a href="contact.php">Hyeyeon(May) Kim</a>, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
+      <p><small>© 2022 by HyeyeonKim
+          <a href="contact.php">May</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="https://validator.w3.org/nu/?doc=http://web-students.net/site46/it161/contact.php">Check HTML</a> ~ 
+          <a id="css-checker" href="https://jigsaw.w3.org/css-validator/validator?uri=http://web-students.net/site46/it161/contact.php">Check CSS</a></small>
      </p>
     </footer>
-  </div>
+    </div>
      
   <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
      
@@ -70,5 +75,6 @@
     }   
  </script>
      
- </body>
+ 
+</body>
 </html>

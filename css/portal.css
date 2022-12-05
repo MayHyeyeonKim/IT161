@@ -38,25 +38,29 @@ h2, h3 {
 }
 
 a {
-    color:darkcyan;
+    color: #B5838D;
     text-decoration: none;
 }
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: #B5838D;
     text-decoration: none;
 }
 
-/*
-iframe {
+.flowchart {
+    margin: 10%;
+    font-size: 20px;
+}
+
+.iframe_flowchart {
     display: block;
     margin: auto;
     width: 90%;
     height: 5700px;
-    border: 2px solid darkcyan;
+    border: 2px solid #B5838D;
 }
-*/
+
 
 footer {
     clear: both;

@@ -1,7 +1,7 @@
 /* Global rules */
 .topnav {
     margin: auto;
-    background-color: #d5bdaf;
+    background-color: rgb(217, 205, 205);
     overflow: auto;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .topnav a.hover, .active {
-    background-color: #B5838D;
+    background-color: rgb(185, 84, 99);
 }
 
 .topnav .icon {
@@ -57,14 +57,14 @@
 /* DESKTOP */
 @media all and (min-width:1200px) {
     .topnav {
-        width: 81%;
+        width: 80%;
     }
 }
 
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
     .topnav {
-        width: 91%;
+        width: 90%;
     }
 }
 
